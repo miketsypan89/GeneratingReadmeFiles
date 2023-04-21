@@ -21,9 +21,10 @@ const questions = [
         message: "What is your email address?",
     },
     {
-        type: "dropdown",
+        type: "list",
         name: "license",
         message: "Pick a license you would like to use:",
+        choices: ["mit", "apache", "gnu gplv3", "unlicense"]
     },
 
 
