@@ -43,6 +43,7 @@ function init() {
             console.log(answers)
             console.log(generateMarkdown(answers))
             generateMarkdown(answers)
+        
         })
         .catch((error) => {
             if (error.isTtyError) {
