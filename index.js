@@ -20,6 +20,11 @@ const questions = [
         name: "email",
         message: "What is your email address?",
     },
+    {
+        type: "dropdown",
+        name: "license",
+        message: "Pick a license you would like to use:",
+    },
 
 
 ];
