@@ -1,3 +1,5 @@
+const fs = require('fs')
+
 // A function that returns a license badge based on which license is passed.
 // If there is no license, an empty string will be returned.
 function renderLicenseBadge(license) {
@@ -26,7 +28,10 @@ function renderLicenseSection(license) { }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-    return ` # ${answers.title} # ${answers.description} # ${answers.email}`;
+    fs.writeFile('./readme.txt',
+        ` # ${data.title} # ${data.description} # ${data.email}`
+    )
+    return ` # ${data.title} # ${data.description} # ${data.email}`;
 
 
 }
